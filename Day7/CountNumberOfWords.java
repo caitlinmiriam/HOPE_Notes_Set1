@@ -12,7 +12,12 @@ public class CountNumberOfWords
     String s2="   Hi       Hello      How      Are     You   ";
 		s2=s2.trim();
 		String [] arr2=s2.split("\\s+");
-		System.out.println(arr2.length);
+		if(s2.isEmpty()){ //This to check if the string has only whitespaces. A string with just whitespaces is considered as one empty string
+			System.out.println(0);
+		}
+		else{
+			System.out.println(arr2.length);
+		}
 
     // A string with leading, trailing and multiple whitespaces without inbuilt
     String s3="   Hi       Hello      How      Are     You   ";
